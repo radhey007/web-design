@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: red; /* For browsers that do not support gradients */
+    
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    width: 100%;
+    
+}
+.header{
+    position: relative;
+    height: 99px;  
+    background-color: rgba(0, 0, 0,.8);
+    margin: 0%;
+    
+    padding: 8px 0px 6px 40px;
+    color: rgb(255, 255, 255);
+}
+.holder{
+    margin-top:45px;
+    position: absolute;
+    left: 10px; 
+}
+
+.head{
+    
+    font-size: 2.5em;
+    display: inline-block;
+    color: rgb(255, 0, 191);    
+    padding: 0%;
+    margin: 0%;
+     
+}
+ul{
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 0px 0px 0px;
+
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0,0);
+    color: gray;
+    padding: 0px 10px;
+    margin: 0px 3px;
+    font-weight: 900;
+    
+}
+
+a:hover{
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    
+}
+.my{
+    margin-left: 800px;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+.content{
+    
+    width: 1250px;
+    
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.slider{
+    
+    position: relative;
+    width:5100px;
+    animation: run;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    
+}
+.slider-box img{
+    float: left;
+    
+}
+@-webkit-keyframes run{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    25%{left: -1250px;}
+    50%{left: -1250px;}
+    55%{left: -2500px;}
+    70%{left: -2500px;}
+    75%{left: -3770px;}
+    90%{left: -3770px;}
+}
+.main{
+    height: 100vh;
+    position: relative;
+    
+}
+.first{
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+ 
+}
+.product1{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: white;    
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+}
+.product2{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: white;    
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.product3{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: white;    
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.product4{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: white;    
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+div div h1{
+    text-align: center;
+    
+}
+#product{
+    position: absolute;
+    left: auto;
+    right: auto;
+    
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+span{
+    
+    color: red;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.second{
+    position: relative;
+    
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    overflow-x: scroll;
+
+}
+.many{
+    position: relative;
+    width: 1875px;
+    height: auto;
+    animation-name: run2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+.many img{
+    margin: 15px;
+    float: left;
+}
+
+@media screen and (max-width:700px){
+    .header{
+        opacity: 0;
+    }
+    .second{
+        width: 600px;
+    }
+    .content{
+        width: 600px;
+    }
+}
+@-webkit-keyframes run2{
+    from{left:0px;}
+    to{left:-520px}
+}
+
